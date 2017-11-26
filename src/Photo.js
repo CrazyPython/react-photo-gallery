@@ -18,7 +18,7 @@ class Photo extends PureComponent {
     const { photo, onClick, margin } = this.props;
     const imgStyle = { display: 'block', float: 'left', margin: margin };
     return (
-      <img
+      <Image
         style={onClick ? { ...imgStyle, ...imgWithClick } : imgStyle}
         {...photo}
         onClick={onClick ? this.handleClick : null}
